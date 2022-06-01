@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 
 import Output from './component/output/Output';
 import Actions from './component/actions/Actions';
@@ -8,6 +9,12 @@ import Constructor from './component/constructor/Constructor';
 import Toggle from './component/toggle/Toggle';
 
 function App() {
+  const [mode, setMode] = useState(false);
+
+  const onToggle = () => {
+    setMode(!mode);
+  }
+
   return (
     <div className="App">
       <div>
@@ -17,7 +24,7 @@ function App() {
         <BtnResult/>
       </div>
       <div>
-        <Toggle/>
+        <Toggle onToggle={onToggle} mode={mode}/>
         <Constructor/>  
       </div>
     </div>
