@@ -30,7 +30,7 @@ const Int = () => {
             <div className='int__item'>
                 <div className='int__value'>3</div>
             </div>
-            <div className='int__item'>
+            <div className='int__item int__long'>
                 <div className='int__value'>0</div>
             </div>
             <div className='int__item'>

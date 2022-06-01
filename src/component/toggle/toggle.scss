@@ -1,0 +1,28 @@
+.toggle {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    background: #F3F4F6;
+    border-radius: 6px;
+    padding: 1px;
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 12px;  
+    }
+    &__text {
+        margin-left: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: #4D5562;
+    }
+}
+.active__button {
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 5px;
+}
